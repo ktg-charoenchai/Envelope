@@ -1,0 +1,159 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Envelope</title>
+<style>
+	*{
+  		box-sizing: border-box;
+	}
+	body{
+    	height: 100vh;
+    	width:100%;
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+		font-family: sans-serif;
+		background: #bdfcc9;
+	}
+	h1{
+		font-size:100px;
+		color:white;
+		position: absolute;
+ 		top: 20%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+  		text-transform: uppercase;
+  		text-decoration: none;
+ 		text-align: center;
+	}
+	p{
+		color:white;
+		position: absolute;
+ 		top: 40%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+  		text-transform: uppercase;
+  		text-decoration: none;
+ 		text-align: center;
+	}
+
+	.gredient_bg{
+    	background: linear-gradient(-45deg, #F2FF9C,#bdfcc9,#9cffae,  #5BBCE3);
+		background-size: 400% 400%;
+		-webkit-animation: gradient 3s ease infinite;
+	        		animation: gradient 3s ease infinite;
+		height: 100vh;
+	}
+
+	.gredient_bg:hover{
+    	-webkit-animation: gradient 3s ease infinite;
+   		animation: gradient 3s ease infinite;
+	}
+
+	@-webkit-keyframes gradient {
+    	0% {
+        	background-position: 0% 50%;
+    	}
+    	50% {
+       		background-position: 100% 50%;
+    	}
+    	100% {
+        	background-position: 0% 50%;
+    	}
+	}	
+	@keyframes gradient {
+    	0% {
+        	background-position: 0% 50%;
+    	}	
+    	50% {
+        	background-position: 100% 50%;
+    	}
+    	100% {
+        	background-position: 0% 50%;
+    	}
+	}
+	.centerBox{
+  		display: flex;
+  		justify-content: center;
+  		align-items: center;
+  		height: 500px
+	}
+	a {
+  		position: absolute;
+ 		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+  		text-transform: uppercase;
+  		text-decoration: none;
+ 		text-align: center;
+  		color: rgb(81, 216, 137);
+  		font-size: 30px;
+ 		font-family: verdana;
+  		letter-spacing: 4px;
+  		padding-left: 5px;
+
+	}
+
+	a::before,
+	a::after,
+	span::before,
+	span::after {
+  		content: '';
+  		position: absolute;
+  		width: 8px;
+  		height: 8px;
+  		background: transparent;
+  		transition: 1s;
+	}
+
+	a::before {
+  		top: -2px;
+  		left: -2px;
+  		border-top: 2px solid rgb(81, 216, 137);
+  		border-left: 2px solid rgb(81, 216, 137);
+	}
+	a::after {
+ 		 top: -2px;
+  		right: -2px;
+  		border-top: 2px solid rgb(81, 216, 137);
+  		border-right: 2px solid rgb(81, 216, 137);
+	}
+
+	span::before {
+  		bottom: -2px;
+  		left: -2px;
+  		border-bottom: 2px solid rgb(81, 216, 137);
+  		border-left: 2px solid rgb(81, 216, 137);
+	}
+	span::after {
+  		bottom: -2px;
+  		right: -2px;
+  		border-bottom: 2px solid rgb(81, 216, 137);
+  		border-right: 2px solid rgb(81, 216, 137);
+	}
+
+
+	a:hover::before,
+	a:hover::after,
+	a:hover span::before,
+	a:hover span::after  {
+  		width: calc( 250px );
+  		height: calc( 50px );
+	}
+	
+</style>
+</head>
+
+<body class="gradient_bg">
+<div class="centerBox">
+	<h1>📩 </h1>
+	<a href="loading.html"><span></span>SORRY FOR THE LATE</a>
+</div>
+
+</body>
+
+</html>
