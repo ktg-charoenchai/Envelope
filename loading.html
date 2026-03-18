@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Envelope</title>
+
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #bdfcc9, #a8f0c6, #c8ffe0);
+    font-family: sans-serif;
+    flex-direction: column;
+  }
+
+  .spinner {
+    width: 60px;
+    height: 60px;
+    border: 6px solid #ffffff;
+    border-top: 6px solid #4caf50;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+  }
+
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  .text {
+    font-size: 24px;
+    color: #333;
+    animation: blink 1s infinite;
+  }
+
+  @keyframes blink {
+    0%,100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+</style>
+</head>
+
+<body>
+
+<div class="spinner"></div>
+<div class="text">Loading...</div>
+
+<script>
+  setTimeout(() => {
+    window.location.href = "index.html";
+  }, 3000);
+</script>
+
+</body>
+</html>
